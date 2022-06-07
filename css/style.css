@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'advent_promedium';
+    src: url('../polices/adventpro-medium-webfont.eot');
+    src: url('../polices/adventpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../polices/adventpro-medium-webfont.woff') format('woff'),
+    url('../polices/adventpro-medium-webfont.ttf') format('truetype'),
+    url('../polices/adventpro-medium-webfont.svg#advent_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body
+{
+    font-family: 'advent_promedium', Arial, serif;
+    font-size: 1em;
+    color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: #800040;
+}
+
+h1 {
+    font-size: 2em;
+    color: #800040;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #800040;
+}
+
+h3 {   
+    margin: 0;
+    font-size: 1.5em;
+    color: #800040;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 50px;
+}
+
+
+nav li {
+    display: inline;
+    padding: 0px 10px;
+}
+nav a {
+    color: #800040;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#banniere {
+    position: relative;
+    height: 175px;
+    background-image: url('../images/banniere.png');
+    background-repeat: no-repeat;
+}
+
+#titre_secondaire {
+    position:  absolute;
+    bottom: 10px;
+    right: 30px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #800040;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 50px;
+}
+
+#contenu_principal {
+    width: 800px;
+    padding: 10px 40px;
+}
+
+#fifa {
+    width: 350px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#fifa h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+#fifa p {
+    text-align: left;
+    
+}
+
+#contenu_principal, .contenu_secondaire{
+    border-radius: 10px;
+}
+
+#contenu_principal, #fifa {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+#qatar, #palmares, #les_bleus {
+    width: 375px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #ffffcc;
+}
+
+#qatar:hover, #palmares:hover, #les_bleus:hover {
+  transition: transform 5s; /* Animation */
+}
+
+#qatar:hover, #palmares:hover, #les_bleus:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+table {
+    border-collapse: separate;
+    width: 100%;
+}
+
+table caption {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #800040;
+}
+
+th {
+    font-size: 1.2em;
+    padding: 5px 10px;
+    background-color: #cccccc;
+}
+
+td {
+    padding: 5px 10px;
+    background-color: #ffffff;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 50px;
+}
+
+footer div {
+    width: 375px;
+    padding: 10px 20px;
+}
+
+footer ul {
+    margin: 20px 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 960px) 
+{
+    section {
+        padding: 10px;
+    }
+
+    #contenu_principal {
+        padding: 10px 20px;
+    }
+}
+
+
+@media screen and (max-width: 480px) 
+{
+    nav li {
+        display: block;
+        margin: 10px;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+
+    #banniere {
+        display: none;
+    }
+}
